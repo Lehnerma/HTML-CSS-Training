@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - HTML & CSS Lernprojekt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kontaktformular</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="html-tags.html">HTML Tags</a></li>
+            <li><a href="css-basics.html">CSS Grundlagen</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Kontaktiere uns</h2>
+            <p>Verwende dieses Formular um mit uns in Kontakt zu treten. Dies ist eine Übung für HTML Formulare.</p>
+        </section>
+
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Persönliche Daten</legend>
+                    
+                    <label for="name">Vorname:</label>
+                    <input type="text" id="name" name="name" placeholder="Dein Vorname" required>
+                    
+                    <label for="lastname">Nachname:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Dein Nachname" required>
+                    
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="deine@email.de" required>
+                    
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+49 123 456789">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nachricht</legend>
+                    
+                    <label for="subject">Betreff:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Worum geht es?" required>
+                    
+                    <label for="message">Nachricht:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Schreibe deine Nachricht hier..." required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Weitere Optionen</legend>
+                    
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Ich möchte Newsletter abonnieren</label>
+                    
+                    <input type="radio" id="contact-email" name="contact-method" value="email">
+                    <label for="contact-email">Per E-Mail kontaktieren</label>
+                    
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                    <label for="contact-phone">Per Telefon kontaktieren</label>
+                </fieldset>
+
+                <button type="submit">Nachricht absenden</button>
+                <button type="reset">Formular zurücksetzen</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HTML & CSS Lernprojekt. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
