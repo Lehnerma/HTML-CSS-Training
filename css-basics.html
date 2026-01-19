@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grundlagen - HTML & CSS Lernprojekt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Grundlagen und Variablen</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="html-tags.html">HTML Tags</a></li>
+            <li><a href="css-basics.html">CSS Grundlagen</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Was ist CSS?</h2>
+            <p>CSS (Cascading Style Sheets) ist eine Sprache zur Gestaltung von HTML-Dokumenten. Mit CSS kannst du Farben, Schriftarten, Abstände und Layouts definieren.</p>
+        </section>
+
+        <section>
+            <h2>CSS Selektoren</h2>
+            
+            <article>
+                <h3>Element Selector</h3>
+                <p>Wählt alle Elemente eines bestimmten Typs aus:</p>
+                <p><code>p { color: blue; }</code> - Alle Absätze werden blau</p>
+            </article>
+
+            <article>
+                <h3>Class Selector</h3>
+                <p>Wählt Elemente mit einer bestimmten Klasse aus:</p>
+                <p><code>.highlight { background: yellow; }</code> - Alle Elemente mit der Klasse "highlight" werden gelb hervorgehoben</p>
+            </article>
+
+            <article>
+                <h3>ID Selector</h3>
+                <p>Wählt ein Element mit einer bestimmten ID aus:</p>
+                <p><code>#header { font-size: 24px; }</code> - Das Element mit der ID "header" hat eine Schriftgröße von 24px</p>
+            </article>
+
+            <article>
+                <h3>Attribute Selector</h3>
+                <p>Wählt Elemente basierend auf ihren Attributen aus:</p>
+                <p><code>input[type="text"] { border: 1px solid black; }</code> - Alle Text-Eingabefelder haben einen schwarzen Rahmen</p>
+            </article>
+
+            <article>
+                <h3>Pseudo-Klassen</h3>
+                <p><code>a:hover { color: red; }</code> - Links werden rot, wenn man über sie fährt</p>
+                <p><code>button:active { opacity: 0.5; }</code> - Buttons werden halbtransparent, wenn man sie klickt</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>CSS Custom Properties (Variablen)</h2>
+            <p>CSS Custom Properties ermöglichen es dir, Werte zu definieren und überall in deiner CSS zu verwenden.</p>
+            
+            <article>
+                <h3>Definition im :root</h3>
+                <p>CSS Variablen werden normalerweise im <code>:root</code> Selector definiert:</p>
+                <p><code>:root { --primary-color: #007bff; --secondary-color: #6c757d; }</code></p>
+            </article>
+
+            <article>
+                <h3>Verwendung von Variablen</h3>
+                <p>Um eine Variable zu verwenden, nutze die <code>var()</code> Funktion:</p>
+                <p><code>button { background-color: var(--primary-color); }</code></p>
+            </article>
+
+            <article>
+                <h3>Vorteile von CSS Variablen</h3>
+                <ul>
+                    <li>Einfaches Ändern von Farben und Werten an einem Ort</li>
+                    <li>Konsistente Gestaltung über die gesamte Website</li>
+                    <li>Bessere Wartbarkeit des Codes</li>
+                    <li>Dynamische Wertänderungen möglich</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>CSS Box Model</h2>
+            <p>Das CSS Box Model beschreibt, wie Elemente aufgebaut sind:</p>
+            <ul>
+                <li><strong>Content:</strong> Der eigentliche Inhalt</li>
+                <li><strong>Padding:</strong> Der Abstand innerhalb des Elements</li>
+                <li><strong>Border:</strong> Der Rahmen um das Element</li>
+                <li><strong>Margin:</strong> Der Abstand außerhalb des Elements</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CSS Eigenschaften zum Lernen</h2>
+            
+            <article>
+                <h3>Text und Schrift</h3>
+                <ul>
+                    <li><code>color</code> - Textfarbe</li>
+                    <li><code>font-size</code> - Schriftgröße</li>
+                    <li><code>font-family</code> - Schriftart</li>
+                    <li><code>text-align</code> - Textausrichtung</li>
+                    <li><code>font-weight</code> - Schriftstärke</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Layout und Abstände</h3>
+                <ul>
+                    <li><code>margin</code> - Außenabstand</li>
+                    <li><code>padding</code> - Innenabstand</li>
+                    <li><code>width</code> - Breite</li>
+                    <li><code>height</code> - Höhe</li>
+                    <li><code>display</code> - Anzeigetyp</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Hintergrund und Rahmen</h3>
+                <ul>
+                    <li><code>background-color</code> - Hintergrundfarbe</li>
+                    <li><code>background-image</code> - Hintergrundbild</li>
+                    <li><code>border</code> - Rahmen</li>
+                    <li><code>border-radius</code> - Abgerundete Ecken</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Lern-Tipp</h3>
+        <p>Beginne mit einfachen CSS Eigenschaften und arbeite dich zu komplexeren Konzepten wie Flexbox und Grid vor. Nutze immer CSS Variablen, um deine Styles konsistent zu halten!</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 HTML & CSS Lernprojekt. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
